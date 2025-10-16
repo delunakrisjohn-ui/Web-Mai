@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Maila's Hobbies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #7903af, #c607b9, #000000d9);
+      background-attachment: fixed;
+      color: #222;
+      line-height: 1.6;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    
+    nav {
+      background: rgba(0,0,0,0.7);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #00eaff;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: cyan;
+      transition: width 0.3s ease;
+    }
+    nav ul li a:hover::after { width: 100%; }
+    nav ul li a:hover { color: cyan; }
+
+    
+    h1 {
+      text-align: center;
+      margin: 40px 20px 10px;
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+    h2.about {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #0a5378;
+    }
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b0b0b;
+      color: #bbb;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">About</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <h1>Maila's Hobbies</h1>
+  <h2 class="about">About me</h2>
+
+  
+  <section>
+    <h2>Who am I?</h2>
+    <p>
+      My name is Maila, and I’m an 18-year-old girl who loves to express herself through creativity, 
+      kindness, and curiosity about the world. Welcome to my personal webpage! This space reflects who I am. 
+      It’s a collection of my thoughts, hobbies, interests, and the little things that make me, me.
+    </p>
+    <p>
+      This webpage reflects who I am. It showcases my hobbies, interests, and personality. 
+      I have always enjoyed creative activities like drawing, writing, and photography because they allow me to express what I feel inside. 
+      Drawing helps me relax and brings my imagination to life, while writing gives me a way to share my thoughts and feelings. 
+      I also love listening to music, watching movies, and spending time with friends. 
+      These moments remind me of how fun and vibrant life can be. 
+      I enjoy learning new things as well, whether it’s about technology, art, or personal growth. 
+      I believe every day is an opportunity to improve and understand myself better.
+    </p>
+  </section>
+
+  
+  
+  
+  <footer>
+    <p>Maila's Hobbies | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

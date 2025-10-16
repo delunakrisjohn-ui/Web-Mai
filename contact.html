@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile-friendly -->
+  <title>Maila's Hobbies - Contact</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+background: linear-gradient(135deg, #7903af, #c607b9, #000000d9);      
+background-attachment: fixed;
+      color: black;
+      line-height: 1.6;
+    }
+
+    
+    nav {
+      background: rgba(0,0,0,0.7);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: cyan;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      transition: max-height 0.3s ease;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: cyan;
+      transition: width 0.3s ease;
+    }
+    nav ul li a:hover::after { width: 100%; }
+    nav ul li a:hover { color: cyan; }
+
+    
+    h1, h2 {
+      text-align: center;
+      margin: 20px 0 10px;
+      color: white;
+    }
+    h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: cyan;
+    }
+
+    
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: teal;
+      font-size: 1.3rem;
+    }
+    .card p {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .card a {
+      color: #0f9ddb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .card a:hover {
+      color: teal;
+      text-decoration: underline;
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b0b0b;
+      color: #bbb;
+      margin-top: 250px;
+      font-size: 0.9rem;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">Contact</div>
+    
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <h1>Maila's hobbies</h1>
+  <h2>😉 Stay tune</h2>
+
+  
+  <div class="container">
+    <div class="card">
+      <h3>📱 Just call  me</h3>
+      <p><strong>Call on:</strong> 0938-035-5713</p>
+    </div>
+
+    <div class="card">
+      <h3>🌍 Social Media</h3>
+      <p>Follow me on: <a href="https://www.facebook.com/profile.php?id=61577775402013" target="_blank">Maila Erro Penaso</a></p>
+    </div>
+
+    <div class="card">
+      <h3>📍Address</h3>
+      <p>Awa, Prosperedad, ADS, Philippines</p>
+    </div>
+  </div>
+
+  
+  <footer>
+    <p> Maila's Hobbies | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

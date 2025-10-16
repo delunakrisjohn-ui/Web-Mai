@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maila's Hobbies</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #7903af, #c607b9, #000000d9);
+      background-attachment: fixed;
+      color: black;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.8);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: cyan;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      transition: max-height 0.3s ease;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: cyan;
+      transition: width 0.3s ease;
+    }
+    nav ul li a:hover::after { width: 100%; }
+    nav ul li a:hover { color: cyan; }
+
+    .welcome {
+      text-align: center;
+      padding: 90px 20px;
+      color: white;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a5378;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card h3 {
+      margin-bottom: 10px;
+      color: rgb(44, 120, 120);
+    }
+
+    .Ako { color: aliceblue; }
+
+    
+    details {
+      cursor: pointer;
+      margin-top: 10px;
+      border-top: 2px solid #ccc;
+      padding-top: 10px;
+    }
+    details summary {
+      color: #0a5378;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .container2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .bh_photo2 {
+      overflow: hidden;
+      border-radius: 12px;
+      border: 3px solid #dae5e9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+    }
+    .bh_photo2 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .bh_photo2:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .bh_photo2:hover img {
+      transform: scale(1.08);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b0b0b;
+      color: #bbb;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Home</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="welcome">
+    <h1>Hey you there!, it's Maila Penaso here, just call me cute for short ;></h1>
+    <p>Well, I'll show you some of my hobbies here — stay tuned yieeeee!</p>
+  </div>
+
+  <section>
+    <h2>About this web</h2>
+    <p class="Ako">
+      This webpage is all about me — who I am, what I do, and the hobbies and interests that shape my personality. 
+      Here, you’ll learn about the things I’m passionate about, from my favorite pastimes to the activities that help me grow and express myself.
+    </p>
+  </section>
+
+  <section>
+    <h2>What I Do</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Rubik's Cube 🧩</h3>
+        <p>I love solving Rubik’s cubes because it helps me improve my focus and problem-solving skills.</p>
+        <details>
+          <summary>See this Rubik’s</summary>
+          <div class="container2">
+            <div class="bh_photo2"><img src="./image/Screenshot 2025-10-09 202841.JPG" alt="Rubiks"></div>
+            <div class="bh_photo2"><img src="./image/finger-person-playing-magic-cube-rubik's cube-rubik's cube-image.JPG" alt="Rubiks2"></div>
+          </div>
+        </details>
+      </div>
+
+      <div class="card">
+        <h3>Nature Photography 🌿📷</h3>
+        <p>Photography is one of my hobbies — I love capturing nature’s beauty and memories with friends.</p>
+        <details>
+          <summary>View my shots</summary>
+          <div class="container2">
+            <div class="bh_photo2"><img src="./image/Screenshot 2025-10-09 202018.JPG" alt="Nature"></div>
+            <div class="bh_photo2"><img src="./image/Screenshot 2025-10-09 202040.JPG" alt="Landscape"></div>
+          </div>
+        </details>
+      </div>
+
+      <div class="card">
+        <h3>Cooking 🍳🍰</h3>
+        <p>Cooking helps me unwind after a long day — sometimes it makes me laugh, sometimes it makes me cry!</p>
+        <details>
+          <summary>Try to look at this</summary>
+          <div class="container2">
+            <div class="bh_photo2"><img src="./image/pexels-bluerhinomedia-2890387.JPG" alt="Cooking"></div>
+            <div class="bh_photo2"><img src="./image/OIP.webp" alt="Food"></div>
+          </div>
+        </details>
+      </div>
+
+      <div class="card">
+        <h3>Lettering˚˖𓍢ִ໋🌷͙֒✧˚.🎀༘⋆</h3>
+        <p>I can express myself through lettering!</p>
+        <details>
+          <summary>See my art</summary>
+          <div class="container2">
+            <div class="bh_photo2"><img src="./image/c0f6be5a-d614-4414-85e3-4f002e1b4db5.JPG" alt="Letter"></div>
+            <div class="bh_photo2"><img src="./image/edcd216b-8717-4f59-ac92-cd277637a5ab.JPG" alt="Write"></div>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>My Journey</h2>
+    <p class="Ako">See a glimpse of my journey doing my hobbies:></p>
+    <a href="about.html" style="color: cyan; text-decoration: none; font-weight: bold;">View More →</a>
+  </section>
+
+  <footer>
+    <p>Maila's Hobbies | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
